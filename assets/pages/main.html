@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title">
+        <h1>Controle de despesas</h1>
+      </div>
+      <div class="action">
+        <span id="user">User</span>
+        <button class="exit" id="sair">Sair</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="content">
+        <div class="number">
+          <h2>Total</h2>
+          <span id="balance">0.00</span>
+        </div>
+        <div class="number">
+          <h2>Receitas</h2>
+          <span id="income">0.00</span>
+        </div>
+        <div class="number">
+          <h2>Despesas</h2>
+          <span id="expense">0.00</span>
+        </div>
+        <div id="msgError"></div>
+        <div id="msgSuccess"></div>
+        <ul id="lista-descricao"></ul>
+        <div class="form-despesas">
+          <div class="descricao">
+            <label for="descricao">Descrição</label>
+            <input
+              type="text"
+              name="descricao"
+              id="descricao"
+              placeholder="Descreva receita/despesa"
+            />
+          </div>
+          <div class="valor">
+            <label for="valor">Valor</label>
+            <input
+              type="number"
+              name="valores"
+              id="valores"
+              placeholder="Insira '-' para negativos"
+            />
+          </div>
+          <div class="botao">
+            <button id="enviar">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
